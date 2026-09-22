@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HSC Chapter Completion Routine</title>
+  <meta name="description" content="HSC Physics, Chemistry, Higher Mathematics and Biology chapter completion routine from 23 September to 26 October 2026.">
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #20252b;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --soft: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans Bengali", "Hind Siliguri", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 28px));
+      margin: 36px auto 50px;
+    }
+
+    .header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    .header h1 {
+      margin: 0 0 6px;
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 700;
+    }
+
+    .header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .routine {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 125px 1fr;
+      gap: 16px;
+      align-items: stretch;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .date {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid var(--border);
+      padding-right: 16px;
+    }
+
+    .date .day-number {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .date .weekday {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .chapters {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .chapter {
+      font-size: 15px;
+      word-break: break-word;
+    }
+
+    .chapter strong {
+      font-weight: 700;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .special {
+      background: var(--soft);
+      border-color: #dbeafe;
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 18px, 920px);
+        margin-top: 18px;
+      }
+
+      .header {
+        padding: 18px;
+      }
+
+      .day {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 13px 14px;
+      }
+
+      .date {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+        padding: 0 0 8px;
+      }
+
+      .date .day-number {
+        font-size: 17px;
+      }
+
+      .chapter {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>HSC Chapter Completion Routine</h1>
+      <p>23 September 2026 – 26 October 2026</p>
+    </header>
+
+    <section class="routine">
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">23 Sep 2026</div>
+          <div class="weekday">Wednesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ১ম</strong> — চতুর্থ অধ্যায়: বৃত্ত</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">24 Sep 2026</div>
+          <div class="weekday">Thursday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ১ম</strong> — প্রথম অধ্যায়: ভৌত জগৎ ও পরিমাপ</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">25 Sep 2026</div>
+          <div class="weekday">Friday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ১ম</strong> — তৃতীয় অধ্যায়: সরলরেখা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">26 Sep 2026</div>
+          <div class="weekday">Saturday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ২য়</strong> — ষষ্ঠ অধ্যায়: কণিক</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">27 Sep 2026</div>
+          <div class="weekday">Sunday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ১ম</strong> — দ্বিতীয় অধ্যায়: ভেক্টর</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">28 Sep 2026</div>
+          <div class="weekday">Monday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ১ম</strong> — তৃতীয় অধ্যায়: গতিবিদ্যা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">29 Sep 2026</div>
+          <div class="weekday">Tuesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ১ম</strong> — চতুর্থ অধ্যায়: নিউটনীয় বলবিদ্যা — Part 1</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">30 Sep 2026</div>
+          <div class="weekday">Wednesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ১ম</strong> — চতুর্থ অধ্যায়: নিউটনীয় বলবিদ্যা — Part 2</div>
+        </div>
+      </article>
+
+      <article class="day special">
+        <div class="date">
+          <div class="day-number">1 Oct 2026</div>
+          <div class="weekday">Thursday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>রসায়ন ১ম</strong> — প্রথম অধ্যায়: ল্যাবরেটরির নিরাপদ ব্যবহার — Part 1</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">2 Oct 2026</div>
+          <div class="weekday">Friday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>রসায়ন ১ম</strong> — প্রথম অধ্যায়: ল্যাবরেটরির নিরাপদ ব্যবহার — Part 2</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">3 Oct 2026</div>
+          <div class="weekday">Saturday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ২য়</strong> — অষ্টম অধ্যায়: স্থিতিবিদ্যা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">4 Oct 2026</div>
+          <div class="weekday">Sunday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ২য়</strong> — নবম অধ্যায়: সমতলে বস্তুকণার গতি</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">5 Oct 2026</div>
+          <div class="weekday">Monday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ১ম</strong> — পঞ্চম অধ্যায়: কাজ, শক্তি ও ক্ষমতা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">6 Oct 2026</div>
+          <div class="weekday">Tuesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>রসায়ন ১ম</strong> — দ্বিতীয় অধ্যায়: গুণগত রসায়ন</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">7 Oct 2026</div>
+          <div class="weekday">Wednesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ২য়</strong> — প্রথম অধ্যায়: প্রাণীর বিভিন্নতা ও শ্রেণিবিন্যাস</div>
+        </div>
+      </article>
+
+      <article class="day special">
+        <div class="date">
+          <div class="day-number">8 Oct 2026</div>
+          <div class="weekday">Thursday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ২য়</strong> — প্রথম অধ্যায়: বাস্তব সংখ্যা ও অসমতা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">9 Oct 2026</div>
+          <div class="weekday">Friday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ২য়</strong> — ষষ্ঠ অধ্যায়: জ্যামিতিক আলোকবিজ্ঞান</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">10 Oct 2026</div>
+          <div class="weekday">Saturday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ১ম</strong> — নবম অধ্যায়: উদ্ভিদ শারীরতত্ত্ব</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">11 Oct 2026</div>
+          <div class="weekday">Sunday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>রসায়ন ১ম</strong> — চতুর্থ অধ্যায়: রাসায়নিক পরিবর্তন</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">12 Oct 2026</div>
+          <div class="weekday">Monday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ২য়</strong> — তৃতীয় অধ্যায়: জটিল সংখ্যা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">13 Oct 2026</div>
+          <div class="weekday">Tuesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ২য়</strong> — দ্বিতীয় অধ্যায়: প্রাণীর পরিচিতি</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">14 Oct 2026</div>
+          <div class="weekday">Wednesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ২য়</strong> — সপ্তম অধ্যায়: ভৌত আলোকবিজ্ঞান</div>
+        </div>
+      </article>
+
+      <article class="day special">
+        <div class="date">
+          <div class="day-number">15 Oct 2026</div>
+          <div class="weekday">Thursday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ১ম</strong> — দশম অধ্যায়: উদ্ভিদ প্রজনন</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">16 Oct 2026</div>
+          <div class="weekday">Friday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>রসায়ন ২য়</strong> — তৃতীয় অধ্যায়: পরিমাণগত রসায়ন</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">17 Oct 2026</div>
+          <div class="weekday">Saturday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ২য়</strong> — চতুর্থ অধ্যায়: মানব শরীরতত্ত্ব — রক্ত ও সঞ্চালন</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">18 Oct 2026</div>
+          <div class="weekday">Sunday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ২য়</strong> — অষ্টম অধ্যায়: আধুনিক পদার্থবিজ্ঞানের সূচনা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">19 Oct 2026</div>
+          <div class="weekday">Monday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ১ম</strong> — দশম অধ্যায়: যোগজীকরণ — Day 1</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">20 Oct 2026</div>
+          <div class="weekday">Tuesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ১ম</strong> — দশম অধ্যায়: যোগজীকরণ — Day 2</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">21 Oct 2026</div>
+          <div class="weekday">Wednesday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>উচ্চতর গণিত ১ম</strong> — দশম অধ্যায়: যোগজীকরণ — Day 3</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">22 Oct 2026</div>
+          <div class="weekday">Thursday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ২য়</strong> — পঞ্চম অধ্যায়: মানব শরীরতত্ত্ব — শ্বসন ও শ্বাসক্রিয়া</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">23 Oct 2026</div>
+          <div class="weekday">Friday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ২য়</strong> — দশম অধ্যায়: মানবদেহের প্রতিরক্ষা</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">24 Oct 2026</div>
+          <div class="weekday">Saturday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>জীববিজ্ঞান ২য়</strong> — একাদশ অধ্যায়: জিনতত্ত্ব ও বিবর্তন</div>
+        </div>
+      </article>
+
+      <article class="day special">
+        <div class="date">
+          <div class="day-number">25 Oct 2026</div>
+          <div class="weekday">Sunday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>পদার্থবিজ্ঞান ২য়</strong> — দশম অধ্যায়: সেমিকন্ডাক্টর ও ইলেকট্রনিক্স</div>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="date">
+          <div class="day-number">26 Oct 2026</div>
+          <div class="weekday">Monday</div>
+        </div>
+        <div class="chapters">
+          <div class="chapter"><strong>Completion Check</strong></div>
+          <div class="note">সব নির্ধারিত chapter শেষ হয়েছে কি না যাচাই</div>
+        </div>
+      </article>
+
+    </section>
+
+    <div class="footer">HSC Chapter Completion Routine</div>
+  </main>
+</body>
+</html>
